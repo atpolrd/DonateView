@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const columns = row.split(',').map(col => col.trim());
             // สมมติว่าคอลัมน์ A คือชื่อผู้บริจาค (index 0) และคอลัมน์ B คือจำนวนเงิน (index 1)
             const donorName = columns[0];
-            let donationAmount = parseFloat(columns[1]);
+            let donationAmount = parseFloat(columns[3]);
 
             if (isNaN(donationAmount)) {
                 donationAmount = 0; // จัดการกรณีที่จำนวนเงินไม่เป็นตัวเลข
@@ -55,5 +55,5 @@ document.addEventListener('DOMContentLoaded', () => {
     fetchDonors();
 
     // ตั้งเวลาให้ดึงข้อมูลใหม่ทุกๆ 30 วินาที เพื่อการอัปเดตแบบเรียลไทม์
-    setInterval(fetchDonors, 30000); 
+    setInterval(fetchDonors, 10000); 
 });
