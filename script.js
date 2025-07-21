@@ -55,5 +55,5 @@ document.addEventListener('DOMContentLoaded', () => {
     fetchDonors();
 
     // ตั้งเวลาให้ดึงข้อมูลใหม่ทุกๆ 30 วินาที เพื่อการอัปเดตแบบเรียลไทม์
-    setInterval(fetchDonors, 10000); 
+    setInterval(fetchDonors, 5000); 
 });
