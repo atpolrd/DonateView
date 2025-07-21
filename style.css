@@ -1,0 +1,97 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f7f6; /* สีพื้นหลัง */
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+}
+
+.container {
+    background-color: #fff;
+    padding: 30px 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    width: 100%;
+    text-align: center;
+}
+
+h1 {
+    color: #2c3e50;
+    margin-bottom: 25px;
+    font-size: 2.5em;
+}
+
+.total-donations {
+    background-color: #e0f2f7;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    border: 1px solid #b3e0f2;
+}
+
+.total-donations p {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+    color: #2980b9;
+}
+
+#totalAmount {
+    font-size: 3.5em;
+    color: #27ae60; /* สีเขียวสำหรับยอดเงิน */
+    font-weight: bold;
+    margin: 0;
+}
+
+.donor-list {
+    text-align: left;
+    margin-top: 30px;
+}
+
+.donor-list h2 {
+    color: #34495e;
+    margin-bottom: 20px;
+    font-size: 1.8em;
+    border-bottom: 2px solid #ecf0f1;
+    padding-bottom: 10px;
+}
+
+#donors {
+    list-style: none;
+    padding: 0;
+    max-height: 400px; /* จำกัดความสูงเพื่อเลื่อนได้ */
+    overflow-y: auto; /* เปิดใช้งานการเลื่อน */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+#donors li {
+    background-color: #fcfcfc;
+    padding: 12px 15px;
+    margin-bottom: 8px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-left: 5px solid #a2d9ce;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+#donors li:last-child {
+    margin-bottom: 0;
+}
+
+.donor-name {
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+.donation-amount {
+    color: #27ae60;
+    font-weight: bold;
+}
